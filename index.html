@@ -18,13 +18,12 @@
     <button onclick="verificarTexto()">Verificar Texto</button>
 
     <input id="inputTexto" value="">
-    <label id="idtexto">Texto:</label>
     <p id="mensaje">Cargue algo por favor.</p>
 
     <script>
         function verificarTexto() {
-            var texto = document.getElementById("inputTexto").value;
-            var mensaje = document.getElementById("mensaje");
+            let texto = document.getElementById("inputTexto").value;
+            let mensaje = document.getElementById("mensaje");
 
             if (texto.trim() === '') {
                 mensaje.style.display = 'block';
